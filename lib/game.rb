@@ -112,8 +112,18 @@ class Game
         other_token == "O"
         other_token == "X" if token == "O"
         mixed_game = Game.new(Players::Human(token), Players::Computer(other_token))
+        mixed_game.play
       elsif answer == "no"
-        
+        puts "Do you want to use 'X' or 'O'?"
+        token = gets.strip
+        until token == "X" || token == "O"
+          puts "Please enter 'X' or 'O'."
+          token = gets.strip.
+        end
+        other_token == "O"
+        other_token == "X" if token == "O"
+        mixed_game = Game.new(Players::Computer(other_token), Players::Human(token))
+        mixed_game.play
       end
       
     elsif players == 2
