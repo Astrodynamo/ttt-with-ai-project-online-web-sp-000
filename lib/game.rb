@@ -129,6 +129,13 @@ class Game
     elsif players == 2
       puts "Does player 1 want to use 'X' or 'O'?"
       token = gets.strip
+      until token == "X" || token == "O"
+          puts "Please enter 'X' or 'O'."
+          token = gets.strip.
+        end
+        other_token == "O"
+        other_token == "X" if token == "O"
+        human_game = Game.new(Players::Human(token), Players::Human(other_token))
     elsif players == 0
       computer_game = Game.new(Players::computer("X"), Players::computer("O"))
       computer_game.play
