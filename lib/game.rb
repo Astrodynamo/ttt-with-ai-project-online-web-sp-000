@@ -85,6 +85,18 @@ class Game
     puts "Cat's Game!" if draw?
   end
   
+  def zero_players
+    puts "You chose 0 human players."
+  end
+  
+  def one_player
+    puts "You chose 1 human player."
+  end
+  
+  def two_player
+    puts "You chose 2 human players."
+  end
+  
   def run
 =begin
     if players == 1 
