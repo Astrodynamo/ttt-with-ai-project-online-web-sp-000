@@ -110,7 +110,9 @@ class Game
           token = gets.strip.
         end
         other_token == "O"
-        other_token == "X" if token == "O"
+        if token == "O"
+          other_token == "X"
+        end
         mixed_game = Game.new(Players::Human(token), Players::Computer(other_token))
         mixed_game.play
       elsif answer == "no"
