@@ -24,3 +24,4 @@ puts "Should player 1 use 'X' or 'O'?"
   end
   token == "X" ? other_token = "O" : other_token = "X"
   
+puts "You selected #{players.to_s} human players, starting with #{token}."
