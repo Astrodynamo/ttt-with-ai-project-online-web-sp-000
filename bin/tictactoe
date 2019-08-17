@@ -32,6 +32,8 @@ case players
     player_2 = Players::Computer.new(other_token)
   when 1
     player_1 = Players::Human.new(token)
-    player_2 = 
+    player_2 = Players::Computer.new(other_token)
+  when 2
+    
     
     Game.new(player_1, player_2).play
