@@ -14,8 +14,13 @@ module Players
     end
     
     def smarter_move (board)
-      move = "5"
+      
       if board.taken?("5")
+        ["1", "3", "7", "9"].each do |spot|
+          board.cells.detect(!board.taken?(spot))
+      else
+        move = "5"
+      end
     end
     
   end
