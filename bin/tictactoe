@@ -26,14 +26,16 @@ puts "Should player 1 use 'X' or 'O'?"
   
 puts "You selected #{players.to_s} human player(s), starting with '#{token}'."
 
-case players
-  when 0
-    player_1 = Players::Computer.new(token)
-    player_2 = Players::Computer.new(other_token)
-  when 1
-    player_1 = Players::Human.new(token)
-    player_2 = Players::Computer.new(other_token)
-  when 2
-    
-    
-    Game.new(player_1, player_2).play
+  case players
+    when 0
+      player_1 = Players::Computer.new(token)
+      player_2 = Players::Computer.new(other_token)
+    when 1
+      player_1 = Players::Human.new(token)
+      player_2 = Players::Computer.new(other_token)
+    when 2
+      player_1 = Players::Human.new(token)
+      player_2 = Players::Human.new(other_token)
+  end
+
+Game.new(player_1, player_2).play
