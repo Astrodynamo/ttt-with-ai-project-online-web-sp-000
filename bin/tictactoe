@@ -24,8 +24,8 @@ puts "How many human players do you want?"
       end
       token == "X" ? other_token == "O" : other_token == "X"
     puts "#{token} goes first."
-    computer_game = Game.new(Players::computer(token), Players::computer(other_token))
-    computer_game.play
+    #computer_game = Game.new(Players::computer(token), Players::computer(other_token))
+    #computer_game.play
     
   when 1
     puts "You chose 1 human player."
