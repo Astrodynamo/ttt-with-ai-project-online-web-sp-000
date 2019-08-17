@@ -84,7 +84,7 @@ class Game
     puts "Congratulations #{winner}!" if won?
     puts "Cat's Game!" if draw?
   end
-  
+=begin  
   def run
     if players == 1 
       puts "Do you want to go first?"
@@ -138,5 +138,5 @@ class Game
       computer_game.play
     end
   end
-  
+=end  
 end
