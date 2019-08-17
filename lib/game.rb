@@ -79,7 +79,7 @@ class Game
     #play prints "Cat's Game!" on a draw
     #Game play plays through an entire game
     while !over?
-      self.board.display_board
+      self.board.display
       turn
     end
     puts "Congratulations #{winner}!" if won?
