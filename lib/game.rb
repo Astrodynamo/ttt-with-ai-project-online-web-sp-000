@@ -61,8 +61,10 @@ class Game
     #turn makes valid moves
     #turn asks for input again after a failed validation
     #turn changes to player 2 after the first turn
+    puts "Please enter 1-9 for your move."
     input = current_player.move(self.board)
     self.board.valid_move?(input) ? self.board.update(input, current_player) : turn
+    puts "You chose #{input}."
   end
   
   def play
