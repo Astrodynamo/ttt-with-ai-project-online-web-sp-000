@@ -31,4 +31,4 @@ puts "How many human players do you want?"
   #when 2
   #  puts "You chose 2 human players."
     
-  #end
+  end
