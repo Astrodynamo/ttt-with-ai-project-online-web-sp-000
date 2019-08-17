@@ -11,15 +11,18 @@ module Players
         #move = rand(1..9).to_s
       #end
       #move
-      moves = ["5", "1", "3", "7", "9"].reverse
-      moves.each do |number|
-        if !board.taken?(number)
-          move = number
-        else
-          move = rand(1..9).to_s
-        end
-        move
-      end
+      if !board.taken?("5")
+        move = "5"
+      elsif !board.taken?("1")
+        move = "1"
+        elsif !board.taken?("3")
+        move = "3"
+        elsif !board.taken?("7")
+        move = "7"
+        elsif !board.taken?("9")
+        move = "9"
+      else
+        
     end
     
   end
