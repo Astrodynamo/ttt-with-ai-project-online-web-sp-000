@@ -123,7 +123,9 @@ class Game
           token = gets.strip.
         end
         other_token == "O"
-        other_token == "X" if token == "O"
+        if token == "O"
+          other_token == "X"
+        end
         mixed_game = Game.new(Players::Computer(other_token), Players::Human(token))
         mixed_game.play
       end
@@ -136,7 +138,9 @@ class Game
           token = gets.strip.
         end
         other_token == "O"
-        other_token == "X" if token == "O"
+        if token == "O"
+          other_token == "X"
+        end
         human_game = Game.new(Players::Human(token), Players::Human(other_token))
     elsif players == 0
       computer_game = Game.new(Players::computer("X"), Players::computer("O"))
