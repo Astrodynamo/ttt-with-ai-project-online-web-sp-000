@@ -13,8 +13,8 @@ puts "How many human players do you want?"
   end
   
   if players == 0
-    puts "You chose 0 human players."
-    puts "Should 'X' or 'O' go first?"
+    #puts "You chose 0 human players."
+    #puts "Should 'X' or 'O' go first?"
     
       #token = gets.strip
       #until token == "X" || token == "O"
