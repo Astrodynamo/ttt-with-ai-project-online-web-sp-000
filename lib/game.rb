@@ -86,14 +86,6 @@ class Game
   end
   
   def run
-    puts "Welcome to Tic-Tac-Toe with AI (easy mode)"
-    puts "How many human players do you want?"
-    
-    players = gets.strip.to_i
-    until players == 0 || players == 1 || players == 2
-      puts "Please enter '0', '1', or '2'."
-      players = gets.strip.to_i
-    end
 =begin
     if players == 1 
       puts "Do you want to go first?"
