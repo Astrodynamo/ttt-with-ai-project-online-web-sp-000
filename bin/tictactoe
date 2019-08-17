@@ -17,13 +17,13 @@ puts "How many human players do you want?"
     puts "You chose 0 human players."
     puts "Should 'X' or 'O' go first?"
     
-      token = gets.strip
-      until token == "X" || token == "O"
-        puts "Please enter 'X' or 'O'."
-        token = gets.strip.
-      end
-      token == "X" ? other_token == "O" : other_token == "X"
-    puts "#{token} goes first."
+      #token = gets.strip
+      #until token == "X" || token == "O"
+        #puts "Please enter 'X' or 'O'."
+        #token = gets.strip.
+      #end
+      #token == "X" ? other_token == "O" : other_token == "X"
+    #puts "#{token} goes first."
     #computer_game = Game.new(Players::computer(token), Players::computer(other_token))
     #computer_game.play
     
