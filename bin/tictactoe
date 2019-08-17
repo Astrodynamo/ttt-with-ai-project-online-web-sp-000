@@ -7,5 +7,5 @@ puts "How many players do you want? (0-2)"
 
 players = gets.strip #account for invalid input
 
-puts "Who should go first and play 'X'?" if players == "1" #account for all options
+puts "Should human or computer go first?" if players == "1" #account for all options
 
