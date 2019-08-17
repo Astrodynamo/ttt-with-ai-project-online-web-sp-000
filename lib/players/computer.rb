@@ -22,7 +22,7 @@ module Players
         elsif !board.taken?("9")
         move = "9"
       else
-        
+        move = rand(1..9).to_s until 
     end
     
   end
