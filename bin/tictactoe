@@ -12,3 +12,11 @@ puts "How many human players do you want?"
     players = gets.strip.to_i
   end
   
+  case
+  when players == 0
+    Game.zero_players
+  when players == 1
+    Game.one_player
+  when players == 2
+    Game.two_players
+  end
