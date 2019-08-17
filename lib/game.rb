@@ -85,20 +85,7 @@ class Game
     puts "Cat's Game!" if draw?
   end
   
-  def zero_players
-    puts "You chose 0 human players."
-  end
-  
-  def one_player
-    puts "You chose 1 human player."
-  end
-  
-  def two_players
-    puts "You chose 2 human players."
-  end
-  
   def run
-=begin
     if players == 1 
       puts "Do you want to go first?"
       answer = gets.strip
@@ -149,7 +136,7 @@ class Game
     elsif players == 0
       computer_game = Game.new(Players::computer("X"), Players::computer("O"))
       computer_game.play
-=end    end
+    end
   end
   
 end
