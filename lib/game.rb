@@ -89,17 +89,19 @@ class Game
     puts "Welcome to Tic-Tac-Toe with AI (easy mode)"
     puts "How many human players do you want?"
 
-    players = gets.strip.to_i until players == 0 || players == 1 || players == 2
+    until players == 0 || players == 1 || players == 2
+      puts "Please enter '0', '1', or '2'"
+      players = gets.strip.to_i
+    end
 
     if players == 1 
       puts "Do you want to go first?"
       answer = gets.strip
     elsif players == 2
-
-    elsif players == 0
-
+      puts "Does player 1 want to use 'X' or 'O'?"
+      token = gets.strip
     else
-      players = gets.strip
+      
     end
   end
   
