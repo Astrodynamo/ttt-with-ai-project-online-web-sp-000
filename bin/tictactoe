@@ -12,9 +12,10 @@ puts "How many human players do you want?"
     players = gets.strip.to_i
   end
   
-  if players == 0
-    #puts "You chose 0 human players."
-    #puts "Should 'X' or 'O' go first?"
+  case players 
+  when 0
+    puts "You chose 0 human players."
+    puts "Should 'X' or 'O' go first?"
     
       #token = gets.strip
       #until token == "X" || token == "O"
@@ -26,10 +27,10 @@ puts "How many human players do you want?"
     #computer_game = Game.new(Players::computer(token), Players::computer(other_token))
     #computer_game.play
     
-  elsif players == 1
+  when 1
     puts "You chose 1 human player."
     
-  elsif players == 2
+  when 2
     puts "You chose 2 human players."
     
   end
