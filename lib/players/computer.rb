@@ -13,6 +13,11 @@ module Players
       move
     end
     
+    def smarter_move (board)
+      move = "5"
+      if board.taken?("5")
+    end
+    
   end
   
 end
