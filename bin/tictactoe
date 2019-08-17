@@ -17,3 +17,10 @@ puts "Enter '2' for player vs. player."
 
 puts "Should player 1 use 'X' or 'O'?"
 
+  token = gets.strip
+  until token == "X" || token == "O"
+    puts "Please enter 'X' or 'O'."
+    token = gets.strip
+  end
+  token == "X" ? other_token == "O" : other_token == "X"
+  
