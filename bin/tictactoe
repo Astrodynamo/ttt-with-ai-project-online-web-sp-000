@@ -9,10 +9,11 @@ puts "Enter '0' for computer vs. computer."
 puts "Enter '1' for player vs. computer."
 puts "Enter '2' for player vs. player."
 
-  #players = gets.strip.to_i
+  players = gets.strip.to_i
   until players == 0 || players == 1 || players == 2
     puts "Please enter '0', '1', or '2'."
     players = gets.strip.to_i
   end
 
 puts "Should player 1 use 'X' or 'O'?"
+
