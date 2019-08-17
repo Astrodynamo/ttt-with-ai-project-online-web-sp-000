@@ -14,7 +14,8 @@ puts "How many human players do you want?"
   
   case
   when players == 0
-    Game.zero_players
+    puts "You chose 0 human players."
+    
   when players == 1
     Game.one_player
   when players == 2
