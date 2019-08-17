@@ -88,20 +88,40 @@ class Game
   def run
     puts "Welcome to Tic-Tac-Toe with AI (easy mode)"
     puts "How many human players do you want?"
-
+    
+    players = gets.strip.to_i
     until players == 0 || players == 1 || players == 2
-      puts "Please enter '0', '1', or '2'"
+      puts "Please enter '0', '1', or '2'."
       players = gets.strip.to_i
     end
 
     if players == 1 
       puts "Do you want to go first?"
       answer = gets.strip
+      until answer == "yes" || answer == "no"
+        puts "Please enter 'yes' or 'no'."
+        answer = gets.strip
+      end
+      if answer == "yes"
+        puts "Do you want to use 'X' or 'O'?"
+        token = gets.strip
+        until token == "X" || token == "O"
+          puts "Please enter 'X' or 'O'."
+          token = gets.strip.
+        end
+        other_token == "O"
+        other_token == "X" if token == "O"
+        mixed_game = Game.new(Players::Human(token), Players::Computer(other_token))
+      elsif answer == "no"
+        
+      end
+      
     elsif players == 2
       puts "Does player 1 want to use 'X' or 'O'?"
       token = gets.strip
-    else
-      
+    elsif players == 0
+      computer_game = Game.new(Players::computer("X"), Players::computer("O"))
+      computer_game.play
     end
   end
   
