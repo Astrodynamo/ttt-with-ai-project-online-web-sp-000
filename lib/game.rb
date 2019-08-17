@@ -85,4 +85,22 @@ class Game
     puts "Cat's Game!" if draw?
   end
   
+  def run
+    puts "Welcome to Tic-Tac-Toe with AI (easy mode)"
+    puts "How many human players do you want?"
+
+    players = gets.strip.to_i until players == 0 || players == 1 || players == 2
+
+    if players == 1 
+      puts "Do you want to go first?"
+      answer = gets.strip
+    elsif players == 2
+
+    elsif players == 0
+
+    else
+      players = gets.strip
+    end
+  end
+  
 end
