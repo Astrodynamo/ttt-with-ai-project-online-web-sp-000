@@ -11,11 +11,14 @@ module Players
         move = rand(1..9).to_s
       end
       move
-    end
-    
-    def smarter_move (board)
-      my_moves = board.cells.map do |cell|
-        
+      
+      ["5", "1", "3", "7", "9"].reverse.each do |number|
+        if !board.taken?(number)
+          move = number
+        else
+          
+        end
+      end
     end
     
   end
