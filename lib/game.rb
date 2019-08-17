@@ -145,7 +145,8 @@ class Game
     elsif players == 0
       computer_game = Game.new(Players::computer("X"), Players::computer("O"))
       computer_game.play
-=end    end
+=end    
+end
   end
   
 end
