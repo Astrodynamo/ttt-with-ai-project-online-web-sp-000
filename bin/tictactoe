@@ -17,7 +17,8 @@ puts "How many human players do you want?"
     puts "You chose 0 human players."
     
   when players == 1
-    Game.one_player
+    puts "You chose 1 human player."
+    
   when players == 2
     Game.two_players
   end
