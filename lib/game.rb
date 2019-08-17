@@ -93,7 +93,7 @@ class Game
     puts "You chose 1 human player."
   end
   
-  def two_player
+  def two_players
     puts "You chose 2 human players."
   end
   
